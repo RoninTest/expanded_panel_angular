@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {DataService} from "../services/data.service";
 import {PeriodicElementData} from "../model/periodicelementdata.model";
 import {animate, state, style, transition, trigger} from "@angular/animations";
-import {PeriodicElementDataEnum} from "../application/periodicelementdata.enum";
+import {PeriodicelementcolumntitleEnum} from "../application/periodicelementcolumntitle.enum";
 
 @Component({
   selector: 'app-table-expandable',
@@ -31,11 +31,11 @@ export class TableExpandableComponent implements OnInit {
     })
   }
 
-  columnsToDisplay = [PeriodicElementDataEnum.name,
-    PeriodicElementDataEnum.weight,
-    PeriodicElementDataEnum.symbol,
-    PeriodicElementDataEnum.position];
-  columnsToDisplayWithExpand = [...this.columnsToDisplay, PeriodicElementDataEnum.expand];
+  columnsToDisplay = [PeriodicelementcolumntitleEnum.name,
+    PeriodicelementcolumntitleEnum.weight,
+    PeriodicelementcolumntitleEnum.symbol,
+    PeriodicelementcolumntitleEnum.position];
+  columnsToDisplayWithExpand = [...this.columnsToDisplay, PeriodicelementcolumntitleEnum.expand];
   expandedElement!: PeriodicElementData | null;
 }
 

@@ -1,4 +1,4 @@
-export enum PeriodicElementDataEnum {
+export enum PeriodicelementcolumntitleEnum {
   name="name",
   weight="weight",
   symbol="symbol",
